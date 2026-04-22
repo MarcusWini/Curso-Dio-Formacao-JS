@@ -1,5 +1,5 @@
 //// Lista de entradas simuladas (substitua os valores para testar diferentes cenários)
-const entradas = ['49.99','75.00','150.00'];
+const entradas = ['49.99', '75.00', '150.00'];
 let i=0;
 
 /**
@@ -8,7 +8,7 @@ let i=0;
 function gets() {
     const valor = entradas[i];
     i++;
-    return valor !== undefined ? String(valor) : "";
+    return String(valor);
 }
 
 /**
