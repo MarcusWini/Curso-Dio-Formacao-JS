@@ -1,5 +1,5 @@
 //// Lista de entradas simuladas (substitua os valores para testar diferentes cenários)
-const entradas = ['49.99', '75.00', '150.00'];
+const entradas = ['LOJA1:10,LOJA2:5,LOJA1:3:10'];
 let i=0;
 
 /**
