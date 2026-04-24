@@ -1,20 +1,16 @@
 function organizarEstoque(entrada) {
   const estoque = {};
-  const lojas = entrada.split(",");
+  const lojas = entrada.split(","); //split é usado para separar ",", salvando separadamente 
+// exemplo: "LOJA1:10,LOJA2:5,LOJA1:3"  EM  LOJAS = ["LOJA1:10", "LOJA2:5", "LOJA1:3"]; 
 
   for (let loja of lojas) {
-    const partes = loja.split(":");
+    const partes = loja.split(":"); //split é usado para separar ":", salvando separadamente 
+    // exemplo: "O:rato:roeu:a:roupa" em 'O', 'Rato', 'roueu'... OU partes = ["LOJA1", "10" ];
     const codigo = partes[0].trim();
     const quantidade = parseInt(partes[1].trim());
 
     // TODO: Atualize o estoque com a quantidade recebida
     // Verificamos se a loja já existe no objeto 'estoque'
-   console.log(estoque, codigo, quantidade, partes, loja, lojas, resultado)
-    if (estoque[codigo]) {
-      estoque[codigo] += quantidade; // Se existe, soma a nova quantidade
-    } else {
-      estoque[codigo] = quantidade; // Se não existe, cria a chave com o valor inicial
-    }
   }
 
   let resultado = "";
